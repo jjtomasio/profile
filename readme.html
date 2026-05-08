@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://picsum.photos/32?random=72">
+    <link rel="shortcut icon" type="image/png" href="https://picsum.photos/32?random=72">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Readme</title>
+</head>
+<body>
+    <div class="estrutura-principal">
+        <div class="cabecalho">
+            <h1>Readme</h1>
+        </div>
+
+        <div class="conteudos">
+            <div class="bloco-conteudo ativo">
+                <div class="lado-direito conteudo-largura-total">
+                    <h2>UC002833 - Projecto Aplicacoes Web (Frontend)</h2>
+
+                    <h3>1. Descricao do projeto</h3>
+                    <p>
+                        Pagina de apresentacao pessoal, com notas biograficas e pessoais,
+                        gostos/competencias (skills), portfolio e blog de fotografia.
+                    </p>
+                    <p>
+                        Foi construida em HTML, com recurso a JavaScript e CSS para navegacao
+                        por secoes, modo noite automatico/manual e layout responsivo. Inclui
+                        uma secção  de contacto.
+                    </p>
+                    <p>
+                        A descricao de funcionalidades implementadas, apresentada abaixo,
+                        segue a logica funcionalidade/finalidade (proposito) e esta alinhada
+                        com o comportamento atual de <code>estilos.css</code> e <code>script.js</code>.
+                    </p>
+
+                    <h3>2. Funcionalidades implementadas</h3>
+
+                    <h4>2.1. CSS</h4>
+                    <p><strong>Ficheiro:</strong> estilos.css</p>
+                    <ul class="lista-sem-marcadores" style="margin-bottom: 1.5em;">
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.1. Variaveis CSS (tema e consistencia visual)</strong><br>
+                            Definidas no topo com <code>:root</code> para cores base, largura maxima e sombra.<br>
+                            Proposito: centralizar o tema visual e facilitar alteracoes futuras em toda a pagina.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.2. Reset basico e base tipografica</strong><br>
+                            Uso de seletor universal com <code>box-sizing</code>, <code>margin</code> e <code>padding</code> a zero,
+                            com estilo global no <code>body</code> (fonte Segoe UI, fundo com gradiente, cor do texto e espacamento).
+                            <br>Proposito: garantir comportamento previsivel e base visual limpa.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.3. Layout principal em blocos</strong><br>
+                            Estruturacao por classes como <code>.estrutura-principal</code>, <code>.cabecalho</code>,
+                            <code>.menu-nav</code>, <code>.conteudos</code>, <code>.bloco-conteudo</code>, <code>.lado-esquerdo</code>,
+                            <code>.lado-direito</code> e <code>.rodape</code>.<br>
+                            Proposito: organizar a pagina em blocos claros e responsivos.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.4. Navegacao com estados hover/focus</strong><br>
+                            Estilos aplicados aos links do menu e ao botao de alternancia de tema nos estados de interacao.
+                            <br>Proposito: melhorar usabilidade e feedback visual ao utilizador.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.5. Estrutura do menu e do rodape</strong><br>
+                            <code>.menu-nav ul</code> organiza os links em linha, enquanto <code>.rodape</code>
+                            define a zona inferior da pagina.<br>
+                            Proposito: manter a navegacao simples e a pagina visualmente equilibrada.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.6. Conteudo por secoes com classe ativa</strong><br>
+                            <code>.bloco-conteudo</code> inicia oculto (<code>display: none</code>) e
+                            <code>.bloco-conteudo.ativo</code> torna-se visivel (<code>display: flex</code>).
+                            <br>Proposito: mostrar apenas a secção  selecionada, evitando poluicao visual.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.7. Componentes de formulario</strong><br>
+                            Uso de <code>.formulario-contacto</code> em grid, <code>.campo</code>, <code>.formulario-largo</code>,
+                            <code>.grupo-radio</code>, <code>.grupo-checkbox</code>, <code>.opcoes-radio</code>, <code>.opcoes-check</code>
+                            e <code>.formulario-acoes</code>.<br>
+                            Proposito: facilitar o preenchimento e manter os controlos organizados.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.8. Tema noturno (modo-noite)</strong><br>
+                            Regras especificas para <code>body.modo-noite</code> e elementos internos, incluindo blocos,
+                            formulários e rodape.<br>
+                            Proposito: melhorar contraste e conforto visual em ambiente escuro.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.9. Responsividade (media queries)</strong><br>
+                            Ajustes para ecras menores, com blocos em coluna unica, campos de formulario a 100% e reducao de espaçamentos.
+                            <br>Proposito: garantir visualizacao coerente em smartphone/tablet e desktop.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.1.10. Estilos das paginas de contexto (contexto.html#guiao e #readme)</strong><br>
+                            Regras para <code>body.pagina-contexto</code>, <code>header</code>, <code>nav a</code>, <code>.wrapper</code>
+                            e <code>iframe</code> nessa pagina especifica.<br>
+                            Proposito: manter todas as paginas (neste caso contexto.html) em coerencia visual com a pagina principal</p>
+                        </li>
+                       
+
+ 
+
+                    </ul>
+
+                    <h4>2.2. JavaScript</h4>
+                    <p><strong>Ficheiro:</strong> script.js</p>
+                    <ul class="lista-sem-marcadores" style="margin-bottom: 1.5em;">
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.1. Estado inicial e elementos do DOM</strong><br>
+                            O codigo guarda referencias para os links do menu, blocos de conteudo,
+                            botao de alternancia de tema e chave usada no <code>localStorage</code>.<br>
+                            Proposito: preparar a base para a interacao da interface.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.2. Persistencia do tema (dia/noite)</strong><br>
+                            Guarda a preferencia no <code>localStorage</code> como <code>dia</code> ou <code>noite</code>
+                            e tenta le-la no carregamento seguinte. O acesso ao armazenamento usa
+                            <code>try/catch</code> para nao bloquear a pagina se o storage falhar.<br>
+                            Proposito: manter o conforto visual personalizado entre sessoes.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.3. Atualizacao visual e acessivel do botao de tema</strong><br>
+                            Atualiza o texto do botao para <code>Modo dia</code> ou <code>Modo noite</code>
+                            e define <code>aria-pressed</code> consoante o estado ativo.<br>
+                            Proposito: melhorar acessibilidade e indicar claramente o modo em uso.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.4. Aplicacao do tema no documento principal e no iframe</strong><br>
+                            Ativa ou desativa a classe <code>modo-noite</code> no <code>body</code>, atualiza
+                            o botao, grava a preferencia e tenta sincronizar o tema com o conteudo
+                            carregado no iframe <code>janelaConteudo</code> quando este existe e esta acessivel.<br>
+                            Proposito: manter coerencia visual entre a pagina principal e o conteudo embebido.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.5. Tema automatico por horario</strong><br>
+                            Calcula a hora atual em minutos e ativa o modo noite entre as 20:30 e as 09:00.
+                            Se nao existir preferencia guardada, essa regra e aplicada no arranque e
+                            volta a ser executada de 30 em 30 segundos enquanto o modo continuar automatico.<br>
+                            Proposito: automatizar o conforto visual conforme a hora do dia.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.6. Navegacao por secoes na pagina principal</strong><br>
+                            Cada clique no menu usa <code>preventDefault</code>, le o <code>href</code>,
+                            oculta todas as secoes e ativa apenas a selecionada. O <code>hash</code> da URL
+                            tambem controla a secção  visivel e, se nao existir um hash valido, abre a primeira.
+                            A mudanca de hash continua sincronizada com o evento <code>hashchange</code>.<br>
+                            Proposito: comportamento tipo tabs/single-page com navegacao fluida.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.7. Conteudo do iframe por hash na pagina de contexto</strong><br>
+                            Quando existe o iframe <code>janelaConteudo</code>, o <code>hash</code> determina o ficheiro:
+                            <code>#readme</code> carrega <code>readme.html</code> e qualquer outro caso carrega
+                            <code>guiao.html</code>. O carregamento inicial e o <code>hashchange</code> mantem essa escolha atualizada.<br>
+                            Proposito: navegação contextual simples e consistente.
+                        </li>
+                         <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.8. Menu navegável por setas (toque ou clique), apenas na versao mobile</strong><br>
+                            Funçoes <code>navegarNoMenu</code>, <code>ObterIndiceLinkPorAlvo</code>, <code>ActualizarSetasMenu</code> e <code>actualizarEstadoMenu</code>
+                           
+                            Proposito: reduzir a quantidade de texto do menu na versao mobile
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.9. atualizar o hash com history.pushState sem provocar salto automático para a âncora</strong><br>
+                            Funçoes <code>atualizarHashSemDeslocar </code><BR>
+                           
+                            Proposito: forçar a navegação abrir sempre a partir do topo da página.
+                        </li>
+                         <li style="margin-bottom: 1.5em;">
+                            <strong>2.2.10. Navegaçao por swipe, apenas na versao mobile</strong><br>
+                            Funçao<code>configurarNavegacaoPorSwipeMenu</code> ao tocar e arrastar horizontalmente no menu até 760px, o gesto para a esquerda avança para a secção seguinte e o gesto para a direita volta para a anterior.<br>
+                            Proposito: permitir  esta forma de navegação, comum em dispositivos móveis.
+                        </li>
+                        
+
+                    </ul>
+
+                    <h4>2.3. HTML</h4>
+                    <p><strong>Ficheiro:</strong> index.html</p>
+                    <ul class="lista-sem-marcadores" style="margin-bottom: 1.5em;">
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.3.1. Tags e metatags fundamentais</strong><br>
+                            Estrutura base HTML para organizacao semantica e compatibilidade.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.3.2. Cabecalho (<code>&lt;head&gt;</code>)</strong><br>
+                            Ligacao ao CSS por <code>&lt;link rel="stylesheet"&gt;</code> e definicao de favicon
+                            por <code>&lt;link rel="icon"&gt;</code> / <code>&lt;link rel="shortcut icon"&gt;</code>.<br>
+                            Proposito: separar apresentacao, manter estrutura limpa e melhorar identificacao visual.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.3.3. Estrutura da pagina (<code>&lt;body&gt;</code>)</strong><br>
+                            Uso de contentores <code>&lt;div&gt;</code> com classes logicas para estruturar
+                            conteudo e facilitar adaptacao responsiva.<br>
+                            Proposito: organizacao clara e manutencao simplificada.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.3.4. Imagens por links externos</strong><br>
+                            Inclusao de imagens com randomizacao para ilustracao das secoes.<br>
+                            Proposito: enriquecer visualmente a pagina.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.3.5. Inputs com nomes intuitivos</strong><br>
+                            Campos de formulario definidos com nomes simples e claros.<br>
+                            Proposito: boas praticas, legibilidade e integracao futura com backend/BD.
+                        </li>
+                        <li style="margin-bottom: 1.5em;">
+                            <strong>2.3.6. Ligacao ao JavaScript externo</strong><br>
+                            Script carregado por <code>&lt;script src="script.js"&gt;</code>.<br>
+                            Proposito: manter HTML limpo e facilitar gestao das funcoes.
+                        </li>
+                    </ul>
+
+                    <h3>3. Instrucoes de uso</h3>
+
+                    <h4>3.1. Acesso</h4>
+                    <p style="margin-bottom: 1.5em;">
+                        A pagina esta disponivel em www.estapagina.com e pode ser consultada em
+                        dispositivos com navegador web (smartphone, tablet ou PC).
+                    </p>
+
+                    <h4>3.2. Navegacao</h4>
+                    <p style="margin-bottom: 1.5em;">
+                        A navegacao principal faz-se pelo menu sob o cabecalho. As opcoes disponiveis sao:
+                        Bio, Formacao, Experiencia, Portfolio, Interesses e Contacto.
+                    </p>
+
+                    <h4>3.3. Interacao</h4>
+                    <p style="margin-bottom: 1.5em;">
+                        Na secção  Contacto, o utilizador pode iniciar interacao com o autor preenchendo
+                        Nome, Email e Mensagem e acionando o botao Enviar
+                        (submissao ainda nao implementada nesta fase).
+                    </p>
+
+                    <h4>3.4. Experiencia do utilizador (modo claro/escuro)</h4>
+                    <p style="margin-bottom: 1.5em;">
+                        O modo claro e ativado automaticamente entre as 09:00 e as 20:30.
+                        O modo escuro e ativado entre as 20:30 e as 09:00 do dia seguinte.
+                        Se o utilizador clicar no botao de tema, essa escolha passa a sobrepor
+                        o modo automatico e o botao alterna entre modo noite e modo dia.
+                    </p>
+
+                    <h3>4. Conclusao</h3>
+                    <ul class="lista-sem-marcadores">
+                        <li>  4.1. Esta página foi desenvolvido com base em:</li> 
+                        <li><b>a) Sessoes de formaçao UC002833</b> (por Joao David):</li>
+                             <li> Diapositivos, ficheiros de apoio e consultoria do formador, que permitiram<li>
+                        <li>Conhecer e compreender a estrutura HTML.</li>
+                        <li>Conhecer e compreender alguns atributos CSS.</li>
+                        <li><b>b) recursos de IA por via do Google Gemini</b>, para:
+                        <li>aprofundar conhecimento em html e CSS.</li>
+                        <li>Aprofundar algum conhecimento base em javascript (variaveis, objectos e funçoes) e parametrizar código para obter resultados desejados.</li>
+                        <li>Receber sugestoes de codigo.</li>
+                        <li>Depurar codigo e documentar funcionalidades implementadas.</li>
+                        <li>Criar itens explicativos das funcionalidades implementadas com JavaScript e CSS, com analise de codigo.</li>
+                        <li>Elaborar este entregavel.</li>
+                        <li>O contacto com estas linguagens (html e css) e principalmente a forma clara como o formador apresentou os conteudos e fez exemplos,
+                            permitiu que assimilasse facilmente os conceitos base, e que a partir daí explorasse um pouco mais fundo e sem grandes dificuldades.
+                            
+                            </li><li>Estas à vontade com a lógica de programação, e ter alguma experiência com outras linguagens, permite compreender de forma mais ou menos rápida o essencial  de JavaScript e a aplicá-lo de forma eficaz neste projeto.
+                            <BR>
+                            
+                        </li>
+                        </li>
+
+                        <li><BR><BR>  4.2. Conclusao
+                            <BR>
+                                Também pelo facto de ter acesso a vários recurso de IA, que me permitiu esclarecer duvidas, aprofundar conhecimento e receber sugestões de código, foi um complemento importante para o desenvolvimento deste projeto, permitindo-me avançar com mais confiança e resolver obstáculos que surgiram durante a implementação.
+                            <BR>
+                            Em resumo, a combinação de uma boa formação, que funcionou como igniçao, e o acesso a recursos de IA foram fundamentais e vao a permitir que inicie este caminho da programação para frontend, que é um dos meus objectivos, em complemento às competências em backend e gestao e bases de dados.
+
+                        </li>
+                    </ul>
+                    
+                    <p><a href="#" onclick="history.back(); return false;">Voltar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
