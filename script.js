@@ -1,3 +1,5 @@
+//script.js - Script do projeto de perfil pessoal JTO
+
 const linksMenu = document.querySelectorAll('.menu-nav a');
 const blocosConteudo = document.querySelectorAll('.bloco-conteudo');
 const botaoAlternarTema = document.getElementById('alternar-tema');
