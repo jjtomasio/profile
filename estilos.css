@@ -430,8 +430,26 @@ body.modo-noite .menu-nav-controlo {
 }
 
 @media (max-width: 760px) {
+    html {
+        height: 100%;
+    }
+
     body {
         padding: 14px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .estrutura-principal {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .conteudos {
+        flex: 1;
     }
 
     .menu-nav {
