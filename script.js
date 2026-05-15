@@ -355,3 +355,5 @@ function atualizarIframePeloHash() {
 prepararSincronizacaoTemaNoIframe();
 window.addEventListener('hashchange', atualizarIframePeloHash);
 atualizarIframePeloHash();
+
+// Fim do script.js
