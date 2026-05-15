@@ -356,4 +356,4 @@ prepararSincronizacaoTemaNoIframe();
 window.addEventListener('hashchange', atualizarIframePeloHash);
 atualizarIframePeloHash();
 
-// Fim do script.js
+// Fim do script
